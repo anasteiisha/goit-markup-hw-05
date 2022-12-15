@@ -64,7 +64,18 @@
       <!--Секція hero-->
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="hero-button" data-modal-open>
+          Замовити послугу
+        </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="btn-close" data-modal-close>
+              <svg class="btn-close-svg">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
 
       <!--Секція особливості-->
@@ -118,25 +129,34 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list actions">
             <li class="img-actions">
-              <img
-                src="./images/desktop_app.jpeg"
-                alt="десктопні додатки"
-                width="370"
-              />
+              <div class="actions-img">
+                <img
+                  src="./images/desktop_app.jpeg"
+                  alt="десктопні додатки"
+                  width="370"
+                />
+                <p class="actions-descr">Десктопні додатки</p>
+              </div>
             </li>
             <li class="img-actions">
-              <img
-                src="./images/mobile_app.jpeg"
-                alt="мобільні додатки"
-                width="370"
-              />
+              <div class="actions-img">
+                <img
+                  src="./images/mobile_app.jpeg"
+                  alt="мобільні додатки"
+                  width="370"
+                />
+                <p class="actions-descr">Мобільні додатки</p>
+              </div>
             </li>
             <li class="img-actions">
-              <img
-                src="./images/design_solutions.jpeg"
-                alt="дизайнерські рішення"
-                width="370"
-              />
+              <div class="actions-img">
+                <img
+                  src="./images/design_solutions.jpeg"
+                  alt="дизайнерські рішення"
+                  width="370"
+                />
+                <p class="actions-descr">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -568,5 +588,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
