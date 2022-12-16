@@ -160,7 +160,7 @@ p {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  bottom: 0;
+  bottom: -1px;
 
   background-color: var(--accent-color);
 }
@@ -176,7 +176,7 @@ p {
 .contacts-nav {
   position: relative;
 }
-.site-nav-item::after {
+/* .site-nav-item::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -187,7 +187,7 @@ p {
 
   background-color: var(--color-accent);
   border-radius: 2px;
-}
+} */
 /*  ---------- contacts nav ----------  */
 
 .contacts-nav {
